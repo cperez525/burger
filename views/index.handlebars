@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>Burgers waiting to be devoured!</h2>
+
+    <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burgerBlocks devoured=true}}
+          {{/unless}}
+        {{/each}}
+    </ul>
+
+    <h2>Burgers that have been devoured!</h2>
+
+    <ul>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burgerBlocks devoured=false}}
+          {{/if}}
+        {{/each}}
+    </ul>
+</div>
