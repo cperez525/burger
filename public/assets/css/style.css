@@ -1,0 +1,26 @@
+body {
+    background-color: aquamarine;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 25%;
+    width: 25%;
+}
+.table {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#form-section {
+    display: grid;
+    justify-content: center;
+}

@@ -44,7 +44,7 @@ var orm = {
     insertOne: function (tableName, cols, vals, cb) {
         var query = "INSERT INTO " + tableName + " (" + cols.toString() + ") VALUES (" + passQuestionMarks(vals.length) + ")";
 
-        connection.query(query, function (err, results) {
+        connection.query(query, vals, function (err, results) {
             if (err) throw err;
 
             cb(results)
